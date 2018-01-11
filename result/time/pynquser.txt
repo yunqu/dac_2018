@@ -1,0 +1,2 @@
+
+pynquser Frames per second: 107.40855313700384

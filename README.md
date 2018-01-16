@@ -16,8 +16,6 @@ This folder contains the python classes needed for the design.
 4. result
 The results includes the coordinates of the resized pictures and the frame rate of each picture.
 
----
-
 ### 12/06/2017 update
 
 Redundant variables in DACSDC.py were moved.

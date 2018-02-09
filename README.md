@@ -28,3 +28,4 @@ Revised python classes and polished notebooks.
 
 Updated the overlay: (1) changed to use HP port for DMA transfer, (2) enlarged the FIFO depth, (3) updated the 
 DDR memory parameters, and (4) updated DMA configuration parameters. 
+

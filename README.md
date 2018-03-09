@@ -19,7 +19,7 @@ jupyter notebook dashboard.
 
 1. overlay: This folder stores the overlay needed for the design. Usually it includes <teamname>.bit and <teamname>.tcl.
 
-2. images: All the test images are stored in this folder)
+2. images: All the test images are stored in this folder.
 
 3. python: This folder contains the python classes needed for the design, as well as the example notebook(s).
 

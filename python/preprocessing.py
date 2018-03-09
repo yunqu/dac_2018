@@ -4,23 +4,20 @@ import xml.dom.minidom
 
 
 BATCH_SIZE = 500
-DAC_CONTEST = '/home/xilinx/jupyter_notebooks/dac_contest'
-IMG_DIR = '/home/xilinx/jupyter_notebooks/dac_contest/images'
-OVERLAY_DIR = '/home/xilinx/jupyter_notebooks/dac_contest/overlay'
-RESULT = '/home/xilinx/jupyter_notebooks/dac_contest/result'
-TIME_DIR = '/home/xilinx/jupyter_notebooks/dac_contest/result/time'
-COORD_DIR = '/home/xilinx/jupyter_notebooks/dac_contest/result/coordinate'
-XML_PATH = '/home/xilinx/jupyter_notebooks/dac_contest/result/xml'
+DAC_CONTEST = '/home/xilinx/jupyter_notebooks/dac_2018'
+IMG_DIR = '/home/xilinx/jupyter_notebooks/dac_2018/images'
+OVERLAY_DIR = '/home/xilinx/jupyter_notebooks/dac_2018/overlay'
+RESULT = '/home/xilinx/jupyter_notebooks/dac_2018/result'
+TIME_DIR = '/home/xilinx/jupyter_notebooks/dac_2018/result/time'
+COORD_DIR = '/home/xilinx/jupyter_notebooks/dac_2018/result/coordinate'
+XML_PATH = '/home/xilinx/jupyter_notebooks/dac_2018/result/xml'
 
     
 # Get image name list
 def get_image_names():
     names_temp = [f for f in os.listdir(IMG_DIR) if f.endswith('.jpg')]
-    names_temp.sort(key=lambda x:int(x[:-4]))
-    return names_temp
-    # return [f for f in os.listdir(IMG_DIR) if f.endswith('.jpg')]
+    return sorted(names_temp)
 
-     
 
 # Process the images in batches, may help when write to XML
 def get_image_batch():
@@ -50,7 +47,7 @@ class Agent:
         self.xml_path = XML_PATH
         self.coord_team = COORD_DIR + '/' + teamname
         self.xml_team = XML_PATH + '/' + teamname
-        self.contestant= DAC_CONTEST + '/' + teamname
+        self.contestant = DAC_CONTEST + '/' + teamname
         folder_list = [self.dac_contest, self.img_dir, self.overlay_dir,
                        self.overlay_dir_team,
                        self.result,
@@ -72,7 +69,6 @@ class Agent:
         self.batch_count = 0
 
     def write(self, t_batch, total_img, teamname):
-        # write time result to time_result.txt
         fps = total_img / t_batch
         with open(self.time_dir + '/' + teamname + '.txt', 'a+') as f:
             f.write("\n" + teamname + " Frames per second: " +

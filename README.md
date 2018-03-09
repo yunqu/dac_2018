@@ -2,6 +2,19 @@
 
 For general questions regarding this contest, please contact Xinyi Zhang <xinyizhang@pitt.edu>.
 
+## Usage
+The get started, users have to run the following command on PYNQ-Z1 board:
+
+```shell
+cd /home/xilinx/jupyter_notebooks
+sudo git clone https://github.com/yunqu/dac_2018.git
+```
+Remember the user name and password are both `xilinx` for super user.
+
+After the above step is completed successfully, you will see a folder `dac_2018` under your 
+jupyter notebook dashboard.
+
+
 ## Folder Structure
 
 1. overlay: This folder stores the overlay needed for the design. Usually it includes <teamname>.bit and <teamname>.tcl.

@@ -8,10 +8,10 @@
 		<object>
 			<name>NotCare</name>
 			<bndbox>
-				<xmin>1</xmin>
-				<xmax>2</xmax>
-				<ymin>3</ymin>
-				<ymax>4</ymax>
+				<xmin>0</xmin>
+				<xmax>1350</xmax>
+				<ymin>0</ymin>
+				<ymax>707</ymax>
 			</bndbox>
 		</object>
 	</annotation>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<annotation>
-		<filename>pynq.jpg</filename>
+		<filename>pynqz1.jpg</filename>
 		<size>
 			<width>640</width>
 			<length>360</length>
@@ -8,10 +8,10 @@
 		<object>
 			<name>NotCare</name>
 			<bndbox>
-				<xmin>1</xmin>
-				<xmax>2</xmax>
-				<ymin>3</ymin>
-				<ymax>4</ymax>
+				<xmin>0</xmin>
+				<xmax>358</xmax>
+				<ymin>0</ymin>
+				<ymax>263</ymax>
 			</bndbox>
 		</object>
 	</annotation>

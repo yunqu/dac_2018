@@ -16,7 +16,8 @@ XML_PATH = '/home/xilinx/jupyter_notebooks/dac_2018/result/xml'
 # Get image name list
 def get_image_names():
     names_temp = [f for f in os.listdir(IMG_DIR) if f.endswith('.jpg')]
-    return sorted(names_temp)
+    names_temp.sort(key= lambda x:int(x[:-4]))
+    return names_temp
 
 
 # Process the images in batches, may help when write to XML
